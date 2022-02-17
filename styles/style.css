@@ -1,0 +1,552 @@
+/*
+filename: style
+author: Foram Aghara
+created: 26/03/2021
+last modified: 25/04/2021
+*/
+
+
+.row{
+	width: 100%;
+}
+
+
+body {
+  margin: 0px;
+  font-family: 'sans-serif';
+  background: linear-gradient(to right, white, grey);
+}
+
+/*
+*
+* CSS styling for the Index Page
+*
+*/
+
+/*Defining style for the gradient overlay image background*/
+.Main_image{
+
+	position: relative;
+	display: inline-block;
+	
+	}
+	
+.Main_image:after{
+		content:'';
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(0,0,0,0)); 
+		}
+.Main_image img{
+	display: block;
+	width:103%;
+
+}
+	
+/*Defining style and position for h2 tag in index page*/
+.position{
+	text-align: center;
+	font-size: 30px;
+	border-bottom: 5px solid;
+	margin-left: 100px;
+	margin-right: 100px; 
+	padding-bottom: 10px;
+}
+
+
+/*Defining style and position for paragraph tag in index page*/
+#position_p{
+	text-align: center;
+	font-size: 20px;
+	border-bottom: 5px solid;
+	margin-left: 100px; 
+	margin-right: 100px;
+	padding-bottom: 20px; 
+}
+
+/* Defining the styling for the css hover overlay effect in index page*/
+.pic{
+	float: left;
+	width: 20%;
+	height: 250px;
+	margin-left: 2%;
+	margin-right: 2%;
+	position: relative;
+}
+
+.pic img{
+	width: 300px;
+	height: 270px;
+	margin-left: 4%;
+	object-fit: cover;
+	display: block;
+}
+
+.pic:hover .home_overlay{
+	height:80%;
+}
+
+.home_overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  color: #ffffff;
+}
+
+.pic h1{
+	font-size: 30px;
+}
+
+/*
+*
+* CSS styling for the Product Page
+*
+*/
+
+/*Defining style and position for h2 tag in product page*/
+.position2{
+	text-align: center;
+	font-size: 25px;
+	border-bottom: 5px solid;
+	margin-left: 100px;
+	margin-right: 100px; 
+	padding-bottom: 10px;
+}
+
+/*Defining style for getting the grid layout on product page by using float*/
+.pg{
+	float: left;
+	width: 25%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-left: 76px;
+	margin-right: 26px;
+
+}
+
+.pg img{
+	width: 300px;
+	height: 270px;
+	margin-left: 4%;
+	object-fit: cover;
+}
+
+aside{
+
+  width: 95%;
+  margin-left: 45px;
+  font-style: italic;
+  font-size: 20px;
+  border-bottom: 5px solid;
+  padding-bottom: 20px;
+
+}
+
+/*Defining the style and dimension for the price table*/
+#price_table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+/*Defining the style and dimension for the cell in the table*/
+#price_table td th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/*Defining background color for the alternate rows in the price table*/
+#price_table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+/*
+*
+* CSS styling for the Enhancement Page
+*
+*/
+
+/*Defining size of h1 heading in about page*/
+#enhancement_page h1 {
+	text-align:center;
+	font-size: 35px;
+}
+
+
+
+/*
+*
+* CSS styling for the Header Section
+*
+*/
+
+/*Defining size of logo in header*/
+#logo{
+
+	height: 75px;
+	width: 268px;
+}
+
+
+/*navbar*/
+header  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header  li {
+  float: left;
+}
+
+header  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header  li a:hover {
+  background-color: #111;
+}
+
+
+/*
+*
+* CSS styling for the Enquire Page
+*
+*/
+
+#enquire_page h1 {
+	text-align:center;
+	font-size: 35px;
+}
+
+
+#enquire_page fieldset {
+	width: 60%;
+    margin: 0 20%;
+	
+}
+
+input[type=submit], input[type=reset] {
+  background-color:#003399;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+
+#cancel{
+background-color:#003399;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+
+/*
+*
+* CSS styling for the About Us Page
+*
+*/
+
+
+/*Defining border,dimension, font size and padding for the table of my details */
+#mydetails{
+	border:none;
+	width:100%;
+	font-size: 20px;
+	padding-left: 5%;
+}
+
+/*Defining top padding of my details table*/
+#mydetails td{
+	padding-top: 15px;
+}
+
+/*Defining class for floating the section containing table and text in left*/
+#float_left {
+	float: left;
+	width: 50%;
+	height: 350px;
+}
+
+/*Defining anchor linking style for hover and decoration*/
+#float_left a {
+	color: #2B65EC;
+	text-decoration: none;
+}
+
+#float_left a:hover {
+	color: gray;
+
+}
+
+#float_left a:visited {
+	color: #2B65EC;
+}
+
+/*Defining class for floating the section containing figure of my profile picture*/
+#float_right {
+	float: right;
+	width: 50%;
+	height: 350px;	
+}
+
+/*Defining styling for the image attached to the figure section*/
+#float_right img {
+	width: 35%;
+	margin: 0 25%;
+	border: 10px double black;
+	padding: 20px;
+}
+
+/*Defining size of h1 heading in about page*/
+#about_page h1 {
+	text-align:center;
+	font-size: 35px;
+}
+
+/*Defining border for table, td,and tr with id = timetable*/
+#timetable tr {
+	border: 1px solid #A5E1FF;
+	border-collapse: collapse;
+}
+
+/*Defining text alignment for td*/
+#timetable td {
+  text-align: left; 
+  border-right: 2px solid #8EAAFF;
+}
+
+/*Defining top-border for the cells to match the exact styling as in swinburne login*/
+#timetable .cell_top{
+	border-top: 2px solid #8EAAFF;
+}
+
+/*Defining color of text in table and providing margin to place it in center*/
+#timetable{
+	color : #003399;
+	margin: 0 20%;
+	width:60%;
+	border: 1px solid #A5E1FF;
+	border-collapse: collapse;
+}
+
+/*Defining background for the cells in column-heading section*/
+#timetable .heading_background{
+	background: #A5E1FF;
+}
+/*Defining background for the cells in column-row section*/
+#timetable .heading_background_top{
+	background: #A5E1FF url(assets/images/DayHeaderBg.png) repeat-x scroll center top;
+	height: 15px;
+}
+
+
+
+/*Defining dimensions for td in first cell */
+#timetable td.timetable_header_time {
+	width: 45px;
+	height: 10px;
+	padding: 2px;
+	border: none;
+
+}
+
+/*Defining dimensions for td in first row heading  */
+#timetable td.timetable_header_other {
+	width: 170px;
+	height: 10px;
+	padding: 2px;
+	border: none;
+	text-align: center;
+}
+
+/*Defining dimensions for td in first column */
+#timetable td.timetable_time {
+	width: 45px;
+	height: 20px;
+	padding: 5px;
+	vertical-align: top;
+}
+
+/*Defining dimensions for td in rest of the columns */
+#timetable td.timetable_other {
+	width: 170px;
+	height: 20px;
+	padding: 5px;
+	background-color: white;
+}
+
+
+/*Background styling for 4 different subjects - Creating Web Applications (CWA), Object-Oriented Programming (oop), Data science project 2 (dp2), Machine Learning (ML)*/
+#timetable .cwa{
+	background-color: #00CCCC;
+	border-radius: 0.7em;
+	font-size: 14px;
+	color: black;
+	vertical-align: top;
+	overflow: hidden;
+	text-align: center;
+}
+
+#timetable .oop{
+	background-color: #CCCCFF;
+	border-radius: 0.7em;
+	font-size: 14px;
+	color: black;
+	vertical-align: top;
+	overflow: hidden;
+	text-align: center;
+}
+
+#timetable .dp2{
+	background-color: #FF99CC;
+	border-radius: 0.7em;
+	font-size: 14px;
+	color: black;
+	vertical-align: top;
+	overflow: hidden;
+	text-align: center;
+}
+
+#timetable .ml{
+	background-color: #CCCC99;
+	border-radius: 0.7em;
+	font-size: 14px;
+	color: black;
+	vertical-align: top;
+	overflow: hidden;
+	text-align: center;
+}
+
+/*
+*
+* CSS styling for the Payment page
+*
+*/
+#payment_page h1{
+	text-align: center;
+
+}
+
+#receipt_page h1{
+	text-align: center;
+
+}
+
+#receipt_page table{
+	width : 100%;
+}
+
+#receipt_page table tr{
+	height: 50px;
+}
+
+
+#manager_page h1{
+	text-align: center;
+
+}
+
+#manager_page table{
+	width : 100%;
+}
+
+#manager_page table tr{
+	height: 50px;
+}
+
+#manager_page #management {
+	border: 3px solid black;
+	width: auto;
+	margin: 0 auto;
+}
+
+
+
+/*
+*
+* CSS styling for the Footer Section
+*
+*/
+
+
+/*Defining height and top border of the footer*/
+footer{
+	height: 280px;
+	border-top: 3px solid black;
+	margin-top: 20px;
+	background-color: #ffffff;
+}
+
+/*Defining margin for index page specifically*/
+#index_page footer {
+	margin-top: 330px;
+}
+
+/*Defining unordered list styling*/
+footer ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*Defining list style*/
+footer ul li{
+	padding-top: 10px;
+}
+
+
+
+
+/*Defining footer section class for floating the 3 sections in footer*/
+.footer_section{
+	float: left;
+	width: 33.33%;
+	height: 100%;
+	text-align:center;
+}
+
+/*Defining width and padding for the footer logo*/
+#footer_logo{
+	width: 65%;
+	padding: 5%;
+}
+
+/*Defining anchor linking style for hover and decoration*/
+footer a {
+	color: gray;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #2B65EC;
+
+}
+
+footer a:visited {
+	color: gray;
+}
